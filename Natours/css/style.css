@@ -42,17 +42,17 @@ body{
 
 }
 
-.logo-box{
+.header__logo-box{
     position: absolute; /* reference to the the header element, and we want it to stay at fixed place */
     top: 4rem;
     left: 4rem;
 }
 
-.logo{
+.header__logo{
     height: 3.5rem;
 }
 
-.text-box{
+.header__text-box{
 
     /* center the div */
     position: absolute;
@@ -70,7 +70,7 @@ body{
     margin-bottom: 6rem;
 }
 
-.heading-primary-main{
+.heading-primary--main{
     display: block;  /* This will transform inline span elem into a block element and it will automatically put line break */
     font-size: 6rem;
     font-weight: 400;
@@ -83,7 +83,7 @@ body{
     animation-iteration-count: 3; */
 
 }
-.heading-primary-sub{
+.heading-primary--sub{
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -115,7 +115,7 @@ body{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
 
 }
-.btn-white{
+.btn--white{
     background-color: #fff;
     color: #777;
 }
@@ -133,7 +133,7 @@ body{
     transition: all .4s;
 }
 
-.btn-white::after{
+.btn--white::after{
     background-color: #fff;
 }
 
@@ -142,7 +142,7 @@ body{
     opacity: 0;
 }
 
-.btn-animated{
+.btn--animated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;  /*applies 0% before the animation starts */
 }
