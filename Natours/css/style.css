@@ -13,7 +13,7 @@ Dark green: #28b485
 *::before{
     margin: 0;
     padding: 0;
-    box-sizing:inherit;
+    box-sizing:inherit; /* border-box is moved to the body tag*/
 }
 
 /* anything related to default fonts, we should put it in the body selectotr */
