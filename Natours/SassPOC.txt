@@ -23,7 +23,14 @@ Button sizes are just size variations of the button itself, which makes it the m
 .menu__item--link {/* Styles */}
 .search__input--icon {/* Styles */}
 
-
+<header class=”header”>
+  <img class=”header__logo”>
+  <form class=”header__search-from”>
+    <input class=”header__search-from__input” type=”input”>
+    <button class=”header__search-from__button” type=”button”>
+  </form>
+  <div class=”header__lang-switcher”></div>
+</header>
 
 https://codepen.io/ajaydeep123/pen/mdjjVow
 
