@@ -4,6 +4,27 @@ Sass has two different syntaxes
 
 CSS architecture: BEM model -> block element modifier
 
+A block represents an object in your website. Think of it as bigger structural chunks of your code.
+ Most common blocks on every website today are header, content, sidebar, footer, and search.
+Blocks in BEM are always a starting point of chaining your CSS classes on to.
+.content {/* Styles */}
+.menu {/* Styles */}
+.search {/* Styles */}
+
+An element is a component within the block that performs a particular function.
+It should only make sense in the context of its block:
+.content__article {/* Styles */}
+.menu__item {/* Styles */}
+.search__input {/* Styles */}
+
+A modifier is how we represent the variations of a block. If you’ve ever used Bootstrap, then the best example would be the button sizes. 
+Button sizes are just size variations of the button itself, which makes it the modifier:
+.content__article--featured {/* Styles */}
+.menu__item--link {/* Styles */}
+.search__input--icon {/* Styles */}
+
+
+
 https://codepen.io/ajaydeep123/pen/mdjjVow
 
 The clearfix, for those unaware, is a CSS hack that solves a persistent bug that occurs when two 
