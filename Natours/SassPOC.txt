@@ -69,4 +69,4 @@ when we have something that is repetitive in nature, we put the common part in a
   }
 }
 
- 
+USE EXTENDS ONLY WHEN THE selectors are INHERENTLY RELATED
