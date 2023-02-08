@@ -1,11 +1,75 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-10rem);
+  }
+  80% {
+    transform: translate(2rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(10rem);
+  }
+  80% {
+    transform: translate(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 /* basic reset */
 *,
 *::after,
@@ -21,43 +85,16 @@ html {
 }
 
 body {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   /* font-size: 16px; */
   line-height: 1.7;
   color: #777;
   padding: 3rem;
-  box-sizing: border-box;
-}
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top; /*this makes the top behave like fixed */
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /* clip-path: polygon(50% 0, 100% 100%, 0 100%); this will make shape of triangle */
-  position: relative;
-}
-
-.header__logo-box {
-  position: absolute; /* reference to the the header element, and we want it to stay at fixed place */
-  top: 4rem;
-  left: 4rem;
-}
-
-.header__logo {
-  height: 3.5rem;
-}
-
-.header__text-box {
-  /* center the div */
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .heading-primary {
@@ -152,77 +189,34 @@ body {
   animation-fill-mode: backwards; /*applies 0% before the animation starts */
 }
 
-@-webkit-keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top; /*this makes the top behave like fixed */
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* clip-path: polygon(50% 0, 100% 100%, 0 100%); this will make shape of triangle */
+  position: relative;
 }
-@keyframes moveInLeft {
-  0% {
-    opacity: 0;
-    transform: translate(-10rem);
-  }
-  80% {
-    transform: translate(2rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+
+.header__logo-box {
+  position: absolute; /* reference to the the header element, and we want it to stay at fixed place */
+  top: 4rem;
+  left: 4rem;
 }
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translate(10rem);
-  }
-  80% {
-    transform: translate(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+
+.header__logo {
+  height: 3.5rem;
 }
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translate(10rem);
-  }
-  80% {
-    transform: translate(-1rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@-webkit-keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
+
+.header__text-box {
+  /* center the div */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 } 
 
 /*# sourceMappingURL=main.css.map */
