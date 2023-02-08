@@ -1,5 +1,9 @@
 Key pillars of responsive design:
 1. fluid layouts
+|---> Float layouts
+|---> FlexBox -> laying out 1d row w/o using floats. perfect for component layouts.
+|---> Css grid -> " 2d grid. Perfect for page layouts and complex components.
+
 2. responsive units
 3. flexible images
 4. media queries
