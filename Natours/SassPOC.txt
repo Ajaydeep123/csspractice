@@ -1,3 +1,11 @@
+Key pillars of responsive design:
+1. fluid layouts
+2. responsive units
+3. flexible images
+4. media queries
+
+
+
 Sass has two different syntaxes
 1.Sass
 2.Scss
